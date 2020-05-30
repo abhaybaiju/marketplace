@@ -17,15 +17,15 @@ function App() {
   <div>
     <Router>
     <Switch>
-    <Route exact path="/">
-      <Redirect to="/marketplace" />
+    <Route exact path="/marketplace">
+      <Redirect to="/" />
         <Home></Home>
       </Route>
   <Route exact path="/product" component={Product}>
       </Route>
       <Route exact path="/address" component={Address}>
       </Route>
-      <Route exact path="/marketplace">
+      <Route exact path="/">
         <Home></Home>
       </Route>
     </Switch>
