@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/marketplace/static/css/main.5f361e03.chunk.css",
+    "main.js": "/marketplace/static/js/main.2db08dd3.chunk.js",
+    "main.js.map": "/marketplace/static/js/main.2db08dd3.chunk.js.map",
+    "runtime-main.js": "/marketplace/static/js/runtime-main.61583d1e.js",
+    "runtime-main.js.map": "/marketplace/static/js/runtime-main.61583d1e.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/marketplace/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.10881ab7.chunk.js": "/marketplace/static/js/2.10881ab7.chunk.js",
+    "static/js/2.10881ab7.chunk.js.map": "/marketplace/static/js/2.10881ab7.chunk.js.map",
+    "index.html": "/marketplace/index.html",
+    "precache-manifest.6fd535280ae783a51980b2493a123be9.js": "/marketplace/precache-manifest.6fd535280ae783a51980b2493a123be9.js",
+    "service-worker.js": "/marketplace/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/marketplace/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.5f361e03.chunk.css.map": "/marketplace/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.10881ab7.chunk.js.LICENSE.txt": "/marketplace/static/js/2.10881ab7.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/marketplace/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61583d1e.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.10881ab7.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.2db08dd3.chunk.js"
+  ]
+}
