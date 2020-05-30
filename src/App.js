@@ -1,12 +1,15 @@
 import React from 'react';
 import Home from './Home.js';
+import Product from './Product.js';
+import Address from './Address.js';
 import './App.css';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
 
 function App() {
@@ -14,7 +17,13 @@ function App() {
   <div>
     <Router>
     <Switch>
+    <Route exact path="/marketplace">
+      <Redirect to="/" />
+        <Home></Home>
+      </Route>
   <Route exact path="/product" component={Product}>
+      </Route>
+      <Route exact path="/address" component={Address}>
       </Route>
       <Route exact path="/">
         <Home></Home>
@@ -24,10 +33,6 @@ function App() {
   </div>
   );
 }
-function Product(props){
-  const {productID} = props.location.state
-  console.log(productID);
-return <h1>Product {productID}</h1>
-}
+
 
 export default App;
