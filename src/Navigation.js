@@ -9,7 +9,7 @@ import {
   function Navigation(){
       return(
         <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Home</NavbarBrand>
+        <NavbarBrand href={process.env.PUBLIC_URL + '/'}>Home</NavbarBrand>
         <NavbarToggler  />
         <Collapse isOpen={false} navbar>
           <Nav className="mr-auto" navbar>

@@ -19,7 +19,7 @@ function App() {
     <Router>
     <Switch>
     <Route exact path="/marketplace">
-      <Redirect to="/" />
+     
         <Home></Home>
       </Route>
       <Route exact path="/product" component={Product}>
@@ -28,7 +28,7 @@ function App() {
       </Route>
       <Route exact path="/collection" component={Collection}>
       </Route>
-      <Route exact path="/">
+      <Route exact path={process.env.PUBLIC_URL + '/'}>
         <Home></Home>
       </Route>
     </Switch>
