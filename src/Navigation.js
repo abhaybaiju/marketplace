@@ -14,30 +14,26 @@ import {
         <Collapse isOpen={false} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/product">Products</NavLink>
+              <NavLink href="https://mlh.io/">MLH</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="https://github.com/abhaybaiju/marketplace">GitHub</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
+                Resources
+              </DropdownToggle> 
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                <NavLink href="https://reactjs.org/">React</NavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
+                <NavLink href="https://reactstrap.github.io/">ReactStrap</NavLink>
                 </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
+               
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
   </Navbar> 
       );
