@@ -3,6 +3,7 @@ import Home from './Home.js';
 import Product from './Product.js';
 import Address from './Address.js';
 import Collection from './Collection.js';
+import Confirmation from './Confirmation.js';
 import './App.css';
 
 import {
@@ -27,6 +28,8 @@ function App() {
       <Route exact path="/address" component={Address}>
       </Route>
       <Route exact path="/collection" component={Collection}>
+      </Route>
+      <Route exact path="/confirmation" component={Confirmation}>
       </Route>
       <Route exact path={process.env.PUBLIC_URL + '/'}>
         <Home></Home>
