@@ -13,14 +13,15 @@ import {
 } from "react-router-dom";
 import logo from './logo.svg';
 
-function Home(){
+function Collection(props){
+    const {collectionID} = props.location.state
     return(
         <div>
         <Navigation></Navigation>
       <Jumbotron fluid>
       <Container fluid>
-        <h1 className="display-3">Marketplace</h1>
-        <p className="lead">This is a site description.</p>
+    <h1 className="display-3">Store {collectionID}</h1>
+        <p className="lead">This is a store description.</p>
       </Container>
     </Jumbotron>
     <Row>
@@ -28,11 +29,11 @@ function Home(){
       <Card body>
         <CardImg top width="100%" src={logo} alt="Card image cap" />
         <CardBody>
-          <CardTitle><h1>Store 1</h1></CardTitle>
+          <CardTitle><h1>Product 1</h1></CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
           <Button>
-          <Link to={{pathname: '/collection', state: { collectionID: 1}}}>Buy</Link>
+          <Link to={{pathname: '/product', state: { productID: 1}}}>Buy</Link>
 
             </Button>
         </CardBody>
@@ -42,10 +43,10 @@ function Home(){
       <Card body>
         <CardImg top width="100%" src={logo} alt="Card image cap" />
         <CardBody>
-          <CardTitle><h1>Store 2</h1></CardTitle>
+          <CardTitle><h1>Product 2</h1></CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button><Link to={{pathname: '/collection', state: { collectionID: 2}}}>Buy</Link></Button>
+          <Button><Link to={{pathname: '/product', state: { productID: 2}}}>Buy</Link></Button>
         </CardBody>
       </Card>
       </Col>
@@ -53,10 +54,10 @@ function Home(){
       <Card body>
         <CardImg top width="100%" src={logo} alt="Card image cap" />
         <CardBody>
-          <CardTitle><h1>Store 3</h1></CardTitle>
+          <CardTitle><h1>Product 3</h1></CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button><Link to={{pathname: '/collection', state: { collectionID: 3}}}>Buy</Link></Button>
+          <Button><Link to={{pathname: '/product', state: { productID: 3}}}>Buy</Link></Button>
         </CardBody>
       </Card>
       </Col>
@@ -67,10 +68,10 @@ function Home(){
       <Card body>
         <CardImg top width="100%" src={logo} alt="Card image cap" />
         <CardBody>
-          <CardTitle><h1>Store 4</h1></CardTitle>
+          <CardTitle><h1>Product 4</h1></CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button><Link to={{pathname: '/collection', state: { collectionID: 4}}}>Buy</Link></Button>
+          <Button><Link to={{pathname: '/product', state: { productID: 4}}}>Buy</Link></Button>
         </CardBody>
       </Card>
       </Col>
@@ -78,10 +79,10 @@ function Home(){
       <Card body>
         <CardImg top width="100%" src={logo} alt="Card image cap" />
         <CardBody>
-          <CardTitle><h1>Store 5</h1></CardTitle>
+          <CardTitle><h1>Product 5</h1></CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button><Link to={{pathname: '/collection', state: { collectionID: 5}}}>Buy</Link></Button>
+          <Button><Link to={{pathname: '/product', state: { productID: 5}}}>Buy</Link></Button>
         </CardBody>
       </Card>
       </Col>
@@ -89,10 +90,10 @@ function Home(){
       <Card body>
         <CardImg top width="100%" src={logo} alt="Card image cap" />
         <CardBody>
-          <CardTitle><h1>Store 6</h1></CardTitle>
+          <CardTitle><h1>Product 6</h1></CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button><Link to={{pathname: '/collection', state: { collectionID: 6}}}>Buy</Link></Button>
+          <Button><Link to={{pathname: '/product', state: { productID: 6}}}>Buy</Link></Button>
         </CardBody>
       </Card>
       </Col>
@@ -102,4 +103,4 @@ function Home(){
     );
 }
 
-export default Home;
+export default Collection;

@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home.js';
 import Product from './Product.js';
 import Address from './Address.js';
+import Collection from './Collection.js';
 import './App.css';
 
 import {
@@ -21,9 +22,11 @@ function App() {
       <Redirect to="/" />
         <Home></Home>
       </Route>
-  <Route exact path="/product" component={Product}>
+      <Route exact path="/product" component={Product}>
       </Route>
       <Route exact path="/address" component={Address}>
+      </Route>
+      <Route exact path="/collection" component={Collection}>
       </Route>
       <Route exact path="/">
         <Home></Home>
